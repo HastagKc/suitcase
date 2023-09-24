@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bbcolor"
+    android:orientation="vertical"
+    tools:context=".Fragments.ManageProductFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/pruductmanagerecy"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/purchasedprodfrag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorGrey"
+            android:text="Purchased Item" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tobuyprod"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorGrey"
+            android:text="Unpurchased Item" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">#3262C4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="teal_200">#C11515</color>
+    <color name="black">#0C0C0C</color>
+    <color name="purple_200">#C11515</color>
+    <color name="teal_700">#C11515</color>
+    <color name="purple_500">#C11515</color>
+    <color name="purple_700">#C11515</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="blue">#3A6CED</color>
+    <color name="bbcolor">#55ADE8</color>
+    <color name="greencolor">#478C2E</color>
+    <color name="address">#2F7092</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="backColBtn">#50FFFFFF</color>
+    <color name="gradEnd">#67EFC8</color>
+    <color name="gradStart">#63C9FF</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="followingBg">#49BEFF</color>
+    <color name="themeColor">#2C7873</color>
+
+
+    <color name="grey">#E5E5E5</color>
+    <color name="colorPurple">#3F1A81</color>
+
+    <color name="whiteText">#FFFFFF</color>
+    <color name="loginRegisterColor">#4254B3</color>
+    <color name="backgroundColor">#4254B3</color>
+    <color name="backgroundColorOfItem">#4C70AE</color>
+    <color name="naigationBarBackColor">#49BEFF</color>
+    <color name="toolBarColor">#062E45</color>
+    <color name="colorGrey">#8C7B7B</color>
+
+</resources>
