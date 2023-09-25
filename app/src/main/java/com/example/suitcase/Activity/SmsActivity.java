@@ -86,7 +86,7 @@ public class SmsActivity extends AppCompatActivity {
         String stringdes = sdes.getText().toString().trim();
         String stringquantity = squantity.getText().toString().trim();
         String stringprice = sprice.getText().toString().trim();
-        String stringloc = sprice.getText().toString().trim();
+        String stringloc = slocation.getText().toString().trim();
         String fullmessage = "title: " + stringtitle + "\n Description: " + stringdes + "\n quantity: " + stringquantity +
                 "\n price: " + stringprice+"\n Location: "+stringloc;
 
