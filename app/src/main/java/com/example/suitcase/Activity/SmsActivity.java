@@ -92,17 +92,17 @@ public class SmsActivity extends AppCompatActivity {
 
 
         if (stringPhone.equals("") || stringtitle.equals("") || stringquantity.equals("") || stringprice.equals("")) {
-            Toast.makeText(this, "enter all field", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Field can't be empty", Toast.LENGTH_SHORT).show();
         } else {
             SmsManager smsman = SmsManager.getDefault();
             smsman.sendTextMessage(stringPhone, null, fullmessage, null, null);
-            Toast.makeText(this, "success", Toast.LENGTH_SHORT).show();
-            smobile.getText().clear();
-            stitle.getText().clear();
-            sdes.getText().clear();
-            squantity.getText().clear();
-            sprice.getText().clear();
-            slocation.getText().clear();
+            Toast.makeText(this, "Message is sent successfully", Toast.LENGTH_SHORT).show();
+//            smobile.getText().clear();
+//            stitle.getText().clear();
+//            sdes.getText().clear();
+//            squantity.getText().clear();
+//            sprice.getText().clear();
+//            slocation.getText().clear();
         }
     }
 
