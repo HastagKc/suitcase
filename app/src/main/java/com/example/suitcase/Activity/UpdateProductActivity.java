@@ -113,9 +113,9 @@ public class UpdateProductActivity extends AppCompatActivity implements OnMapRea
 
             int result = db.updateproduct(productDataModel, pdm.get(0).getProductid());
             if (result == -1) {
-                Toast.makeText(this, "failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Product is failed to update", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Succcess", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Product is update successfully", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(UpdateProductActivity.this, ProductListActivity.class);
                 intent.putExtra("pcid", pdm.get(0).getProductcategoryid());
                 startActivity(intent);

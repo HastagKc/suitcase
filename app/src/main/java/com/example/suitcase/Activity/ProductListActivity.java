@@ -134,13 +134,14 @@ public class ProductListActivity extends AppCompatActivity {
                     ProductListAdapter aadapter = new ProductListAdapter(ProductListActivity.this, rrecentdata);
                     product_recy.setAdapter(aadapter);
                     priceresult();
+                    Toast.makeText(ProductListActivity.this, "Product is delete successfully", Toast.LENGTH_SHORT).show();
                     break;
 
                 case ItemTouchHelper.RIGHT:
                     if (productstsswipe == -1) {
                         db.productpurchased(1, productIdswipe);
                         ArrayList<ProductDataModel> recentdata = db.productfetchdata(procatid);
-                        //Toast.makeText(ProductListActivity.this, "Item Purchased", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ProductListActivity.this, "Item is Purchased", Toast.LENGTH_SHORT).show();
                         Objects.requireNonNull(product_recy.getAdapter()).notifyDataSetChanged();
 
                         alldata.get(position).setProductstatus(1);
@@ -149,7 +150,7 @@ public class ProductListActivity extends AppCompatActivity {
                     } else if (productstsswipe == 1) {
                         db.productpurchased(-1, productIdswipe);
                         ArrayList<ProductDataModel> recentdata = db.productfetchdata(procatid);
-                       // Toast.makeText(ProductListActivity.this, "Item unmarked", Toast.LENGTH_SHORT).show();
+                       Toast.makeText(ProductListActivity.this, "Item is unmarked as purchased", Toast.LENGTH_SHORT).show();
                         Objects.requireNonNull(product_recy.getAdapter()).notifyDataSetChanged();
 
                         alldata.get(position).setProductstatus(-1);

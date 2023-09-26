@@ -115,7 +115,7 @@ public class ManageProductFragment extends Fragment {
                         alldata = db.productfetchdataforpurchased(1);
                         ManageProductAdapter aadapter2 = new ManageProductAdapter(getActivity(), alldata);
                         product_recy.setAdapter(aadapter2);
-                        //Toast.makeText(ProductListActivity.this, "Item Purchased", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Item is Purchased", Toast.LENGTH_SHORT).show();
                         Objects.requireNonNull(product_recy.getAdapter()).notifyDataSetChanged();
 
                         alldata.get(position).setProductstatus(1);
@@ -126,7 +126,7 @@ public class ManageProductFragment extends Fragment {
                         alldata = db.productfetchdataforpurchased(-1);
                         ManageProductAdapter aadapter2 = new ManageProductAdapter(getActivity(), alldata);
                         product_recy.setAdapter(aadapter2);
-                        // Toast.makeText(ProductListActivity.this, "Item unmarked", Toast.LENGTH_SHORT).show();
+                         Toast.makeText(getActivity(), "Item is Un-purchase", Toast.LENGTH_SHORT).show();
                         Objects.requireNonNull(product_recy.getAdapter()).notifyDataSetChanged();
 
                         alldata.get(position).setProductstatus(-1);

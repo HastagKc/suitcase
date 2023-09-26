@@ -94,11 +94,11 @@ public class manageUserFragment extends Fragment {
             boolean updateSuccessful = db.updateUserByEmail(email, fname, lname, pass);
 
             if (updateSuccessful) {
-                Toast.makeText(getActivity(), "Update Successful", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Profile is Updated Successfully", Toast.LENGTH_SHORT).show();
                 updateEmail(email);
                 replaceFragment(new UserFragment());
             } else {
-                Toast.makeText(getActivity(), "Update Failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Profile Failed to Update", Toast.LENGTH_SHORT).show();
             }
         }
     }

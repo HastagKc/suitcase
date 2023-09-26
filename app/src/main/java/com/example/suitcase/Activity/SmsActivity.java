@@ -97,18 +97,17 @@ public class SmsActivity extends AppCompatActivity {
             SmsManager smsman = SmsManager.getDefault();
             smsman.sendTextMessage(stringPhone, null, fullmessage, null, null);
             Toast.makeText(this, "Message is sent successfully", Toast.LENGTH_SHORT).show();
-//            smobile.getText().clear();
-//            stitle.getText().clear();
-//            sdes.getText().clear();
-//            squantity.getText().clear();
-//            sprice.getText().clear();
-//            slocation.getText().clear();
+            smobile.getText().clear();
+            stitle.getText().clear();
+            sdes.getText().clear();
+            squantity.getText().clear();
+            sprice.getText().clear();
+            slocation.getText().clear();
         }
     }
 
     public void settext() {
         ArrayList<ProductDataModel> pdm = db.productfetchdataformapload(pid);
-      //  Toast.makeText(this, "test", Toast.LENGTH_SHORT).show();
         stitle.setText(pdm.get(0).getProductname());
         sdes.setText(pdm.get(0).getProductdescription());
         squantity.setText(String.valueOf(pdm.get(0).getProductquantity()));

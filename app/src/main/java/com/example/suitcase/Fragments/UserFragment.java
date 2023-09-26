@@ -114,9 +114,9 @@ public class UserFragment extends Fragment {
                 int result = db.updateimage(convertImageViewToByteArray(profile), value);
 
                 if (result < 0) {
-                    Toast.makeText(getActivity(), "Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Failed to update image", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getActivity(), "Success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Profile image is successfully update", Toast.LENGTH_SHORT).show();
                 }
 
             }
